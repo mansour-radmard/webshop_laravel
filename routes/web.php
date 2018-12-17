@@ -13,7 +13,7 @@
 
 Route::get('/', 'IndexController@index');
 
-Route::get('/product/{id}', 'AdController@ad')->name('ad.show');
+Route::get('/ad/{id}', 'AdController@ad')->name('ad.show');
 
 Auth::routes();
 

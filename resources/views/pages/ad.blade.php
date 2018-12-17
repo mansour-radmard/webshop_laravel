@@ -8,9 +8,9 @@
             <img class="card-img-top img-fluid" src="http://placehold.it/900x400" alt="">
             <div class="card-body">
                 <h2 class="card-title"></h2>
-                <h4>Asking price:</h4>
-                <h4><span>EUR </span></h4>
-                <p class="card-text"></p>
+                <h4>{{$ad->product_name}}</h4>
+                <h4><span>EUR </span>{{$ad->price}}</h4>
+                <p class="card-text">{{$ad->product_description}}</p>
                 <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
                 4.0 stars
             </div>
