@@ -18,7 +18,7 @@ class CreateAdsTable extends Migration
             $table->string('product_name');
             $table->string('product_description');
             $table->integer('price');
-            $table->dateTime('date');
+            $table->timestamp('date');
             $table->integer('user_id');
         });
     }
