@@ -12,7 +12,7 @@
                 <p class="card-text">{{$ad->product_description}}</p>
             </div>
             <div class="card-footer">
-                <a href="resources/views/product.php?id=" class="btn btn-primary">Find Out More!</a>
+                <a href="{{ route('ad.show', ['id' => $ad->id]) }}" class="btn btn-primary">Find Out More!</a>
             </div>
         </div>
     </div>
