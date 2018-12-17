@@ -2,19 +2,21 @@
 
 @section('content')
 <div class="row text-center">
+   @foreach ($ads as $ad)
     <div class="col-md-3">
         <div class="card">
             <img class="card-img-top" src="http://placehold.it/500x325" alt="">
             <div class="card-body">
-                <h5 class="card-title"></h5>
-                <h6 class="card-title"></h6>
-                <p class="card-text"></p>
+                <h5 class="card-title">{{$ad->product_name}}</h5>
+                <h6>{{$ad->price}}</h6>
+                <p class="card-text">{{$ad->product_description}}</p>
             </div>
             <div class="card-footer">
                 <a href="resources/views/product.php?id=" class="btn btn-primary">Find Out More!</a>
             </div>
         </div>
     </div>
+   @endforeach
 </div>
 <div class="row">
     <div class="col-md-12">
