@@ -14,12 +14,14 @@ class CreateAdsTable extends Migration
     public function up()
     {
         Schema::create('ads', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->engine = 'InnoDB';
+            $table->increments('id')->unsigned()->nullable();
             $table->string('product_name');
             $table->string('product_description');
             $table->integer('price');
             $table->timestamp('date');
-            $table->integer('user_id');
+            $table->integer('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->unique()->unsigned();
         });
     }
 

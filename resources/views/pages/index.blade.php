@@ -8,7 +8,7 @@
             <img class="card-img-top" src="http://placehold.it/500x325" alt="">
             <div class="card-body">
                 <h5 class="card-title">{{$ad->product_name}}</h5>
-                <h6>{{$ad->price}}</h6>
+                <h6><span>EUR </span>{{$ad->price}}</h6>
                 <p class="card-text">{{$ad->product_description}}</p>
             </div>
             <div class="card-footer">
